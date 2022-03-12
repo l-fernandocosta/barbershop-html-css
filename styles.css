@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Poppins';
+}
+
+:root {
+  font-size: 100%;
+  --yellow: #eeed35;
+  --bg-color: #272727;
+  --gray-700: #353535;
+}
+
+.section-divider{
+
+height: 1px;
+background: rgb(39,39,39);
+background: linear-gradient(90deg, rgba(39,39,39,1) 10%, rgba(238,237,53,1) 47%, rgba(39,39,39,1) 84%);
+}
+
+body {
+  background: var(--bg-color);
+
+}
+
+main{
+  margin-top: 6rem;
+}
+
+/* header */
+#header {
+  background-color: var(--bg-color);
+  border-bottom: 1px solid var(--yellow);
+  width: 100%;
+  overflow: hidden;
+  position: fixed;  
+  top: 0;
+  left: 0;
+
+  align-items: center;
+
+  height: 4.5rem;
+  font: 700 1.31rem 'Poppins', sans-serif; 
+  z-index: 100;
+}
+
+#header img {
+  width: 2.7rem;
+}
+#header a{
+  font-size: 2.7rem;
+
+}
+
+#header .logo-image{
+  display: flex;
+  align-items: center;
+
+}
+
+
+nav{
+  
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#header .container span{
+  color: var(--yellow);
+}
+
+section{
+  padding: 5rem 0;
+} 
+
+/* home section  */
+#home {
+  overflow: hidden;
+}
+#home .container{
+  margin: 0;
+}
+#home .image{
+  position: relative;
+}
+
+#home .image::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: var(--yellow);
+  top:-16.8%;
+  left:16.8%;
+  z-index: 0;
+  
+  border-radius: 4px;
+}
+#home .image img{
+  border-radius: 4px;
+  position: relative;
+  right: 2.93rem;
+}
+#home .text{
+
+  margin-left: 1.5rem;
+  text-align: center;
+}
+
+
+#home .text h1{
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+#home .text p{
+  max-width: 100%;
+  margin-bottom:2rem;
+}
+#home .text h1 span{
+  color: var(--yellow);
+}
+.whatsBtn{
+  background:transparent;
+  border: 1px solid var(--yellow);
+  color: var(--yellow);
+  height: 4rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 0 2rem;
+  transition: all 0.4s;
+}
+.whatsBtn:hover{
+  background: var(--yellow);
+  color: #272727;
+}
