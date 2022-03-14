@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./assets/style.css" >
+ 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
@@ -15,12 +17,21 @@
 
 <body>
   <header id='header'>
-    <nav class='container'>
+    <nav class='container show'>
         <div class="logo-image">
           <img src="./assets/ursologo.png" alt="">
           <a href="#" class="logo">HOOD</a>
         </div>
-      <button class="menu">Menu</button>
+        <div class="menu">
+          <ul class="grid">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">SOBRE</a></li>
+            <li><a href="#services">TRAMPOS</a></li>
+            <li><a href="#contact">CONTATO</a></li>
+          </ul>
+        </div>
+        <div class="close icon-cancel-circle"></div>
+        <div class="toggle icon-th-menu"></div>
     </nav>
   </header>
 
@@ -45,9 +56,9 @@
       </div>
     </section>
     <div class="section-divider"></div>
-    <section class="section">
-      <div class="container">outra section</div>
-    </section>
+  <section class="section" id="about">
+    <div class="container grid">ABOUT</div>
+  </section>
   </main>
 
 

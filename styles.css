@@ -11,10 +11,10 @@
   --yellow: #eeed35;
   --bg-color: #272727;
   --gray-700: #353535;
+  --gray-500: #808080;
 }
 
 .section-divider{
-
 height: 1px;
 background: rgb(39,39,39);
 background: linear-gradient(90deg, rgba(39,39,39,1) 10%, rgba(238,237,53,1) 47%, rgba(39,39,39,1) 84%);
@@ -22,12 +22,31 @@ background: linear-gradient(90deg, rgba(39,39,39,1) 10%, rgba(238,237,53,1) 47%,
 
 body {
   background: var(--bg-color);
-
 }
 
 main{
   margin-top: 6rem;
 }
+
+.container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+section{
+  padding: 5rem 0;
+} 
+
 
 /* header */
 #header {
@@ -59,39 +78,90 @@ main{
   align-items: center;
 
 }
+#header .container span{
+  color: var(--yellow);
+}
 
-
+/* Navigation */
 nav{
-  
   height: 4.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.container {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+nav .menu{
+  opacity: 0;
+  visibility: hidden;
 }
 
-.grid {
-  display: grid;
-  gap: 2rem;
+
+nav.show .menu{
+  opacity: 1;
+  visibility: visible;
+
+  background: var(--gray-700);
+  position: fixed;
+
+  height: 100vh;
+  width: 100vw;
+
+  top:0;
+  left:0;
+
+  text-align: center;
+  padding-top: 10rem;
+  
 }
-a {
-  color: white;
-  text-decoration: none;
+nav.show ul.grid{
+  gap: 4rem;
 }
 
-#header .container span{
+nav ul li a:hover{
   color: var(--yellow);
+  transition: all 0.5s;
+  position: relative;
 }
 
-section{
-  padding: 5rem 0;
-} 
+nav ul li a::after{
+   content: "";
+   width: 2px;
+   height: 0%;
+   background-color: var(--yellow);
+   position: absolute;
+   left: 0;
+   margin-left: -10px;
+   transition: height 0.4s;
+}
 
-/* home section  */
+nav ul li a:hover::after{
+  height: 100%;
+}
+
+/* toggle options */
+nav .icon-cancel-circle{
+  visibility: hidden;
+  opacity: 0;
+}
+nav.show .icon-cancel-circle{
+  visibility: visible;
+  opacity: 1;
+
+  position: absolute;
+  right: 1.5rem;
+  transition: all 0.2s;
+}
+
+.toggle{
+  color: var(--yellow);
+  font-size: 1.5rem;
+}
+.close{
+  color: var(--gray-500);
+}
+
+
+/* home section  */ 
 #home {
   overflow: hidden;
 }
