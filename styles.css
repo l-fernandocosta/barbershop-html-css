@@ -155,9 +155,11 @@ nav.show .icon-cancel-circle{
 .toggle{
   color: var(--yellow);
   font-size: 1.5rem;
+  cursor: pointer;
 }
 .close{
   color: var(--gray-500);
+  cursor: pointer;
 }
 
 
