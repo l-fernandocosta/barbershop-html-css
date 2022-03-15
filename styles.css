@@ -225,3 +225,41 @@ nav.show .icon-cancel-circle{
   background: var(--yellow);
   color: #272727;
 }
+/* About Section */
+#about .about-img img  {
+  margin-top: 3rem;
+  width: 37rem;
+  border-radius: 0.5rem;
+  position: relative;
+  right: 2.93rem;
+}
+#about .about-img::before{
+  content: '';
+  position: absolute;
+  height: 30%;
+  width: 90%;
+  background: var(--yellow);
+  top: -8;
+  left:-10;
+  right: -40;
+  z-index: 0;
+  
+  border-radius: 4px;
+
+}
+
+
+#about .text h2{
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+#about .text p:last-child{
+  font-size: 1rem;
+  margin-bottom: 6rem;
+}
+
+
+
+/* SERVICES SECTION */
