@@ -67,6 +67,6 @@ scrollReveal.reveal(`
 .section-divider,
 #about .about-img, #about .text,
 #services h2,#services .img-service, .img-one, .img-two, .img-three, .img-four,
-#localization h2, #localization .stores,
+#localization h2, #localization .stores
 
 `, {delay: 500, transition: 100})
