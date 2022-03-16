@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./assets/style.css">
 
@@ -50,7 +52,8 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Itaque, deserunt provident.
             Sequi, magnam ducimus ipsum alias qui et quod! Fugit.</p>
-          <a href="#" class="whatsBtn">AGENDAR UM HORÁRIO</a>
+          <a href="https://api.whatsapp.com/message/QBXINXONJ2HVI1?autoload=1&app_absent=0" target="_blank"
+            class="whatsBtn">AGENDAR UM HORÁRIO</a>
         </div>
 
       </div>
@@ -85,28 +88,79 @@
       <div class="section-divider"></div>
     </section>
 
+    <!-- Services section  -->
     <section class="section" id="services">
+
       <div class="container grid">
+        <h2>TRAMPOS</h2>
         <div class="img-service">
 
-          <img src="/assets/service1.png" alt="service1">
-          <p>Trampo 1</p>
+          <div class="img-one">
+            <img class="" src="/assets/service1.png" alt="service1">
+            <p class="">CORTE UNDERCUT</p>
+          </div>
 
-          <img src="/assets/service2.png" alt="service2">
-          <p>Trampo 2</p>
+          <div class="img-two">
+            <img class="" src="/assets/service2.png" alt="service2">
+            <p class="">CORTE DEGRADÊ</p>
+          </div>
 
-          <img src="/assets/service3.png" alt="service3">
-          <p>trampo 3</p>
+          <div class="img-three">
+            <img class="" src="/assets/service3.png" alt="service3">
+            <p>CORTE SEILÁ</p>
+          </div>
 
-          <img src="/assets/service4.png" alt="service4">
-          <p>trampo 4</p>
+          <div class="img-four">
+            <img class="" src="/assets/service4.png" alt="service4">
+            <p>BRABODEMAIS</p>
+          </div>
 
+          <div class="container grid">
+            <a href="https://www.instagram.com/hoodbarbearia/" target="_blank" class="whatsBtn">VER MAIS</a>
+          </div>
 
         </div>
     </section>
+
+    <div class="section-divider"></div>
+
+    <section class="section" id="localization">
+
+      <div class="container grid">
+        <h2>CONTATOS</h2>
+
+        <div class="stores swiper">
+
+          <div class="swiper-wrapper">
+
+            <div class="card swiper-slide">
+              <img src="/assets/hood.png" alt="barbearia1">
+              <a href="#">LOJA 1 - CENTRO </a>
+            </div>
+
+
+            <div class="card swiper-slide ">
+              <img src="/assets/hoodcentro.png" alt="barbearia1">
+              <a href="#">LOJA 2 - MICROCAMP</a>
+            </div>
+            
+          </div>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+
+    </section>
+
   </main>
 
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
   <script src="app.js"></script>
+
 </body>
 
 </html>

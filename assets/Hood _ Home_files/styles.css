@@ -380,33 +380,7 @@ nav.show .icon-cancel-circle:hover{
   object-fit: cover;
 }
 
-.swiper-pagination-bullets.swiper-pagination-horizontal{
-  bottom: 27rem;
-  left: 0px;
-  width: 100%;
-}
 
-.swiper-button-next{
-  bottom: 0;
-  right: 0;
-  left: 10;
-  top: 20rem;
-  color: var(--gray-700)
-}
-.swiper-button-prev{
-  bottom: 0;
-  right: 0;
-  left: 10;
-  top: 20rem;
-  color: var(--gray-700)
-}
-
-.swiper a{
-  text-align: center;
- font-weight: bold;
- font-size: 2rem;
-}
-.swiper a:hover{
-  cursor: pointer;
-  color: var(--yellow);
+.swiper.swiper-pagination-bullet-active {
+  position: absolute;
 }
