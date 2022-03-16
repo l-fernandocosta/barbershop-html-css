@@ -376,15 +376,20 @@ nav.show .icon-cancel-circle:hover{
 
 .swiper {
   margin-top: -5rem;
+  margin-bottom: -6.5rem;
   width: 40rem;
   height: 70rem;
   object-fit: cover;
 }
 .swiper-slide{
   height: auto;
-  padding: 4rem 1rem
-}
+  padding-top: 2rem;
+  margin-bottom: 1.5rem;
 
+}
+#localization .section{
+  padding: 0;
+}
 .swiper-pagination-bullet {
   width: 0.75rem;
   height: 0.75rem;
@@ -423,6 +428,8 @@ nav.show .icon-cancel-circle:hover{
  width: 0%;
  transition: width 0.4s
 }
+
+
 .swiper a:hover{
   cursor: pointer;
   color: var(--yellow);
@@ -443,5 +450,66 @@ nav.show .icon-cancel-circle:hover{
 }
 
 .swiper a:hover::after{
+  cursor: pointer;
+  color: var(--yellow);
+ 
+  width: 100%;
+}
+.section #localization{}
+/* FOOTER */
+#footer {
+  background-color:#242424;
+  height: auto;
+}
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#footer .info img, span{
+  font-size: 3rem;
+  font-weight: bold;
+
+  width: 2.5rem;
+}
+#footer .info{
+  margin-left: 1rem;
+}
+
+
+#footer .social{
+  margin-right:1rem;
+}
+
+#footer .social a{
+  text-align: center;
+  font-size: 1rem;
+  transition: all 0.3s;
+  position: relative;
+  width: 0%;
+  transition: width 0.4s;
+  margin-right: 1rem;
+}
+
+#footer .social a:hover{
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+#footer .social a::after{
+  content: '';
+  position: absolute;
+  background-color: #eeed35;
+  right: 1.24rem;
+  top: 20;
+  bottom: 0;
+  left: 0;
+  height: 0.1rem;
+  width: 0%;
+  transition: width 0.6s;
+}
+
+#footer .social a:hover::after{
   width: 100%;
 }
