@@ -1,5 +1,4 @@
 
-
 const nav = document.querySelector('#header nav')
 nav.ele
 
@@ -42,7 +41,9 @@ for(const img of imgs){
   })
 }
 const swiper = new Swiper('.swiper', {
-
+  slidesPerView: 1,
+  moousewheel: true, 
+  keyboard: true.valueOf, 
   pagination: {
     el: '.swiper-pagination',
   },
@@ -52,6 +53,20 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 
-
-
 });
+
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '80px',
+  duration: 800, 
+  reset: true, 
+})
+
+scrollReveal.reveal(`
+#home .image, #home .text,
+.section-divider,
+#about .about-img, #about .text,
+#services h2,#services .img-service, .img-one, .img-two, .img-three, .img-four,
+#localization h2, #localization .stores
+
+`, {delay: 500, transition: 100})
