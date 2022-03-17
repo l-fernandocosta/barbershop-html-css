@@ -277,7 +277,6 @@ nav.show .icon-cancel-circle:hover{
 }
 
 #about .text p:last-child{
-  font-size: 1rem;
   margin-bottom: 6rem;
 }
 
@@ -355,6 +354,10 @@ nav.show .icon-cancel-circle:hover{
 
 
 /* localização */
+#localization h2{
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
 #localization .grid{
   justify-content: center; 
 }
@@ -525,3 +528,133 @@ nav.show .icon-cancel-circle:hover{
   width: 100%;
 }
 
+/* media queries*/
+
+@media only screen and (max-width: 768px){
+
+  *{
+    overflow-x: hidden;
+    margin-right: 0;
+  }
+  main{
+    margin-top: 3rem;
+  }
+
+  .section{
+    margin-right: 1rem;
+  }
+  #header img{
+    margin-right:0.5rem;
+  }
+  #header a{
+    font-size: 1.8rem;
+  }
+
+  #home .image img{
+    position: relative;
+    width: 24rem;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.938);
+    border-radius: 4px;
+    right: 2.93rem;
+  
+  }
+  
+  #home .image::before{
+    height: 25rem;
+    width: 14rem;
+  }
+
+  #home .text{
+    margin-left: 1.5rem;
+    text-align: center;
+  }
+  
+  #home .text h1{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+
+  #about .about-img img  {
+    margin-top: 3rem;
+    width: 24rem;
+    
+    border-radius: 0.5rem;
+    position: relative;
+    right: 0;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.938);
+  }
+
+  #about h2{
+    margin-top: 0.5rem;
+  }
+  #about p {
+    margin-top: -1.2rem;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+ 
+  #services h2{
+    margin-top: 0;
+  }
+
+  #services .img-service img{
+    height: 38rem;
+  }
+
+  #services.section{
+    padding: 0 0 4rem 0;
+  }
+
+
+  #localization h2{
+    margin-top: -2rem;
+  }
+  
+  
+  #localization .swiper a{
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .swiper {
+    width: 18rem;
+    overflow-y: hidden;
+    height: 35rem;
+    padding: 0rem 0rem 0rem 0rem;
+  }
+
+  .swiper .swiper-wrapper{
+    border-radius: 1rem;
+    overflow-y: hidden;
+    width: 40rem;
+    height: 65rem;
+  }
+
+  #localization .card img{
+    border-radius: 1rem;
+    height: 22rem;
+  }
+  .swiper-pagination-bullet {
+    width: 1rem;
+    height: 1rem;
+  }
+  .swiper-pagination-bullets.swiper-pagination-horizontal{
+    bottom: 14rem;
+    left: 0px;
+    width: 20rem;
+  }
+
+  #footer{
+    display: inline-block;
+    width: 100%;
+  }
+
+  #footer .social{
+    margin-left: 1rem;
+  }
+
+  #footer .info{
+    justify-content: center;
+  }
+}

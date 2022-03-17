@@ -43,7 +43,7 @@ for(const img of imgs){
 const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
   moousewheel: true, 
-  keyboard: true.valueOf, 
+  keyboard: true, 
   pagination: {
     el: '.swiper-pagination',
   },
@@ -57,7 +57,7 @@ const swiper = new Swiper('.swiper', {
 
 const scrollReveal = ScrollReveal({
   origin: 'top',
-  distance: '80px',
+  distance: '30px',
   duration: 800, 
   reset: true, 
 })
@@ -65,8 +65,8 @@ const scrollReveal = ScrollReveal({
 scrollReveal.reveal(`
 #home .image, #home .text,
 .section-divider,
-#about .about-img, #about .text,
-#services h2,#services .img-service, .img-one, .img-two, .img-three, .img-four,
+#about .about-img, #about,  #about p,
+#services, #services h2,#services .img-service, .img-one, .img-two, .img-three, .img-four,
 #localization h2, #localization .stores
 
 `, {delay: 500, transition: 100})
