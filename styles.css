@@ -101,6 +101,7 @@ nav .menu{
 
 
 nav.show .menu{
+  list-style-type: none;
   opacity: 1;
   visibility: visible;
 
