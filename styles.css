@@ -119,6 +119,7 @@ nav.show .menu{
   
 }
 nav.show ul.grid{
+  list-style-type: none;
   gap: 4rem;
 }
 nav.show {
